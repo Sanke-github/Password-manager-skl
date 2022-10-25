@@ -11,7 +11,7 @@ import random
 import pybase64
 
 
-mydb = mysql.connector.connect(host="localhost", user = "root",passwd = "sankeerthsanvi",database = 'pwd')
+mydb = mysql.connector.connect(host="localhost", user = "root",passwd = "",database = 'pwd')
 mycursor = mydb.cursor()
 
 def unsuccess_msg():
@@ -56,8 +56,6 @@ def display():
 
         i = i+1
 
-
-
 def new_pass():
     global w
     w=Frame(tkWindow,width=400,height=240,bg='#5A5A5A')
@@ -79,7 +77,6 @@ def new_pass():
     passwordEntry = Entry(tkWindow, textvariable=password, show='*').place(x=200,y = 140)  
     saveButton = Button(tkWindow, text="save", command=success_msg,border = 5,bg = '#28b3c4',font = ('consolas','11','bold')).place(x =  160,y=180)
     display_button = Button(tkWindow,text = 'display records',command = display,border = 5,bg = '#28b3c4',font = ('consolas','11','bold')).place(x =  250,y=180)
- 
     return sitename,username,password
 
 def encrypt():
@@ -126,10 +123,7 @@ def decrypt():
         decMessage = fernet.decrypt(encMessage).decode()
         dnC = ('The decrypted value is : \n {} ').format(decMessage)
         Label(z, text=dnC, font= ('Consolas 13 bold'),bg='#3DAAB6').pack(ipadx=20, ipady=20, padx=20, pady=20,fill=tkinter.BOTH, expand=True)
-
-
-    
-    
+        
     button = Button(z,text = 'decrypt!',command = getvalue,width = 10,border = 5,bg = '#5A5A5A').place(x =450,y = 120)
 
 
