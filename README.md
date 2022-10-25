@@ -2,7 +2,11 @@
 A tkinter based gui that manages and stores your password into sql database, providing encryption and decryption features
 HOME PAGE(STORE PASSWORD)
 ![image](https://user-images.githubusercontent.com/86974454/197690782-ab20dbe4-49a5-424d-9e6a-2bfb6daa0580.png)
+
+
 UPDATE PASSWORD
+
+
 ![image](https://user-images.githubusercontent.com/86974454/197690803-98478e2f-5c09-421b-aaa2-52e21fec1726.png)
 ENCRYPT,DECRYPT,DELETE,GENERATE A RANDOM PASSWORD
 ![image](https://user-images.githubusercontent.com/86974454/197690913-b77aef5f-9900-488f-a1a4-1e53a85b7617.png)
